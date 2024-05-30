@@ -1,0 +1,114 @@
+/* Default styles */
+.navbar {
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    margin-top: 10px; /* Add margin for better spacing */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px; /* Add margin for better spacing */
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid #FFFF00;
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #FFFF00;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
+
+/* Media queries */
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 30px;
+    }
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 120px;
+    }
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right {
+        gap: 20px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-right {
+        justify-content: flex-end; /* Align to the right */
+        flex-basis: 100%; /* Take full width */
+    }
+    .navbar button {
+        padding: 8px 15px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
