@@ -1,21 +1,29 @@
-***Food Delivery Website****
+***Food Delivery Website***
 
 ***Overview***
 This is a fullstack food delivery website built to provide a seamless food ordering experience. The project includes a frontend developed using React and ViteJS, and a backend developed with the MERN stack (MongoDB, Express.js, React, and Node.js). The application also integrates Stripe for payment processing, supports data fetching, API connections, and includes an admin panel for managing orders and users.
 
 ***Table of Contents***
->Features
->Technologies Used
->Installation_
-_Usage_
+Features
+
+Technologies Used
+
+Installation_
+
+Usage_
+
 Project Structure
+
 API Endpoints
+
 Payment Integration
+
 Admin Panel
+
+
 Contributing
+
 License
-
-
   <header>
     <h1>Food Delivery Website</h1>
     <nav>
