@@ -31,7 +31,7 @@
     background: transparent;
     font-size: 16px;
     color: #49557e;
-    border: 1px solid #FFFF00;
+    border: 1px solid #00ff44;
     padding: 10px 20px; /* Adjust padding for smaller screens */
     border-radius: 50px;
     cursor: pointer;
@@ -59,7 +59,7 @@
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color: #FFFF00;
+    background-color: #ff0062;
     border-radius: 5px;
     top: -8px;
     right: -8px;
