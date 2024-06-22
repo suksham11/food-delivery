@@ -1,151 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Website</title>
+  <style>
+   
+   .body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-Food Delivery Website
-Food Delivery Website is a fullstack project that provides a seamless food ordering experience. The frontend is developed using React and ViteJS, while the backend is built with the MERN stack (MongoDB, Express.js, React, and Node.js). It also integrates Stripe for payment processing, supports data fetching, API connections, and includes an admin panel for managing orders and users. Passwords are securely hashed using bcrypt.
 
-Table of Contents
-Features
-Technologies Used
-Getting Started
-Installation
-Environment Variables
-Usage
-Project Structure
-API Endpoints
-Payment Integration
-Admin Panel
-Contributing
-License
-Features
-User Authentication and Authorization: Secure login and registration for users.
-Browse and Search: Users can browse and search for food items.
-Order Placement: Add items to the cart and place orders.
-Stripe Payment Integration: Secure payment processing with Stripe.
-Admin Panel: Manage orders, users, and food items.
-Real-time Updates: Receive real-time updates and notifications.
-Secure Password Hashing: Passwords are hashed using bcrypt.
-Technologies Used
-Frontend:
+  .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-React
-ViteJS
-React-DOM
-CSS/SCSS
-Backend:
+   . nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
-MongoDB
-Express.js
-Node.js
-Mongoose
-bcrypt
-Payment Integration:
+  .nav li {
+      margin-left: 20px;
+    }
 
-Stripe
-Other Tools and Libraries:
+  .nav a {
+      color: #fff;
+      text-decoration: none;
+    }
 
-Axios for API requests
-Redux for state management
-React Router for navigation
-JWT for authentication
-Nodemailer for email notifications
-Getting Started
-Installation
-Clone the repository:
-bash
-Copy
-git clone https://github.com/suksham11/food-delivery-website.git
-cd food-delivery-website
-Install dependencies:
-For the Backend:
-bash
-Copy
-cd backend
-npm install
-For the Frontend:
-bash
-Copy
-cd ../frontend
-npm install
-Start the development servers:
-Backend:
-bash
-Copy
-cd backend
-npm run server
-The backend server will start on http://localhost:5173.
-Frontend:
-bash
-Copy
+    /* Main Content Styles */
+  .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+  .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Project Structure Styles */
+  .project-structure {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+  .project-structure > div {
+      flex-basis: 48%;
+      margin-bottom: 40px;
+    }
+
+  .project-structure h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+  .project-structure pre {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    /* Footer Styles */
+  .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Food Delivery Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">Project Structure</h2>
+      <div class="project-structure">
+        <div>
+          <h3>Backend</h3>
+          <pre>
 cd ../frontend
 npm run dev
-The frontend development server will start on http://localhost:4000.
-Environment Variables
-Create a .env file in the backend directory and add the following environment variables:
-
-ini
-Copy
+          </pre>
+        </div>
+        <div>
+          <h3>Environment Variables</h3>
+          <pre>
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 STRIPE_SECRET_KEY=your_stripe_secret_key
-Usage
+          </pre>
+        </div>
+        <div>
+          <h3>Usage</h3>
+          <pre>
 Visit http://localhost:3000 to view the application.
 Register and log in to start browsing and ordering food items.
 Admin users can access the admin panel to manage orders, users, and food items.
-Project Structure
-The project structure is as follows:
-
-java
-Copy
+          </pre>
+        </div>
+        <div>
+          <h3>Project Structure</h3>
+          <pre>
 food-delivery-website/
 ├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   ├── app.js
-│   └── package.json
 ├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── store/
-│   │   ├── utils/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── public/
-│   ├── vite.config.js
-│   └── package.json
 ├── .gitignore
 └── README.md
-API Endpoints
-The backend API endpoints are as follows:
+          </pre>
+        </div>
+      </div>
+    </section>
+  </main>
 
-Endpoint	HTTP Method	Description
-/api/users/register	POST	Register a new user
-/api/users/login	POST	Log in a user
-/api/orders	GET, POST	Get all orders or create a new order
-/api/orders/:id	GET, PUT, DELETE	Get, update, or delete a specific order
-/api/menu	GET, POST	Get all menu items or create a new menu item
-/api/menu/:id	GET, PUT, DELETE	Get, update, or delete a specific menu item
-/api/users	GET, PUT, DELETE	Get all users, update, or delete a specific user
-Payment Integration
-The project integrates Stripe for secure payment processing. To set up Stripe, follow these steps:
-
-Create a Stripe account and obtain your Stripe secret key.
-Add the Stripe secret key to the .env file in the backend directory.
-Implement the necessary Stripe-related functionality in the backend and frontend to handle payment processing.
-Admin Panel
-The admin panel provides the following functionalities:
-
-Manage orders: View, update, and delete orders.
-Manage users: View, update, and delete user accounts.
-Manage menu items: Add, update, and delete food items in the menu.
-Contributing
-Contributions are welcome! If you'd like to contribute to the Food Delivery Website, please follow these steps:
-
-Fork the repository.
-Create a new branch (e.g., git checkout -b feature/your-feature).
-Commit your changes (e.g., git commit -am 'Add new feature').
-Push to the branch (e.g., git push origin feature/your-feature).
-Create a new Pull Request.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+  <footer>
+    <p>&copy; 2024 Food Delivery Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
