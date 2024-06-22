@@ -52,7 +52,7 @@ Installation
 Clone the repository:
 bash
 Copy
-git clone https://github.com/your-username/food-delivery-website.git
+git clone https://github.com/suksham11/food-delivery-website.git
 cd food-delivery-website
 Install dependencies:
 For the Backend:
@@ -71,13 +71,13 @@ bash
 Copy
 cd backend
 npm run server
-The backend server will start on http://localhost:5000.
+The backend server will start on http://localhost:5173.
 Frontend:
 bash
 Copy
 cd ../frontend
 npm run dev
-The frontend development server will start on http://localhost:3000.
+The frontend development server will start on http://localhost:4000.
 Environment Variables
 Create a .env file in the backend directory and add the following environment variables:
 
