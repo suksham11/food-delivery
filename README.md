@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Delivery Website</title>
   <style>
-   
-   .body {
+    /* Global Styles */
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
-
-  .header {
+    /* Header Styles */
+    header {
       background-color: #333;
       color: #fff;
       padding: 20px;
@@ -22,52 +22,52 @@
       align-items: center;
     }
 
-   . nav ul {
+    nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
       display: flex;
     }
 
-  .nav li {
+    nav li {
       margin-left: 20px;
     }
 
-  .nav a {
+    nav a {
       color: #fff;
       text-decoration: none;
     }
 
     /* Main Content Styles */
-  .main {
+    main {
       max-width: 1200px;
       margin: 0 auto;
       padding: 40px;
     }
 
-  .section-title {
+    .section-title {
       font-size: 24px;
       margin-bottom: 20px;
     }
 
     /* Project Structure Styles */
-  .project-structure {
+    .project-structure {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
 
-  .project-structure > div {
+    .project-structure > div {
       flex-basis: 48%;
       margin-bottom: 40px;
     }
 
-  .project-structure h3 {
+    .project-structure h3 {
       font-size: 18px;
       margin-bottom: 10px;
     }
 
-  .project-structure pre {
+    .project-structure pre {
       background-color: #f5f5f5;
       padding: 20px;
       border-radius: 5px;
@@ -75,7 +75,7 @@
     }
 
     /* Footer Styles */
-  .footer {
+    footer {
       background-color: #333;
       color: #fff;
       text-align: center;
