@@ -1,89 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Delivery Website</title>
-  <style>
-    /* Global Styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+***Food Delivery Website****
 
-    /* Header Styles */
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+***Overview***
+This is a fullstack food delivery website built to provide a seamless food ordering experience. The project includes a frontend developed using React and ViteJS, and a backend developed with the MERN stack (MongoDB, Express.js, React, and Node.js). The application also integrates Stripe for payment processing, supports data fetching, API connections, and includes an admin panel for managing orders and users.
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
+***Table of Contents***
+>Features
+>Technologies Used
+>Installation_
+_Usage_
+Project Structure
+API Endpoints
+Payment Integration
+Admin Panel
+Contributing
+License
 
-    nav li {
-      margin-left: 20px;
-    }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    /* Main Content Styles */
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px;
-    }
-
-    .section-title {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    /* Project Structure Styles */
-    .project-structure {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .project-structure > div {
-      flex-basis: 48%;
-      margin-bottom: 40px;
-    }
-
-    .project-structure h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-
-    .project-structure pre {
-      background-color: #f5f5f5;
-      padding: 20px;
-      border-radius: 5px;
-      overflow-x: auto;
-    }
-
-    /* Footer Styles */
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
   <header>
     <h1>Food Delivery Website</h1>
     <nav>
