@@ -8,9 +8,9 @@ Features
 
 Technologies Used
 
-Installation_
+Installation
 
-Usage_
+Usage
 
 Project Structure
 
