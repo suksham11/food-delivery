@@ -1,6 +1,6 @@
 ***Food Delivery Website***
 
-This is a fullstack food delivery website built to provide a seamless food ordering experience. The project includes a frontend developed using React and ViteJS, and a backend developed with the MERN stack (MongoDB, Express.js, React, and Node.js). The application also integrates Stripe for payment processing, supports data fetching, API connections, and includes an admin panel for managing orders and users.
+This is a fullstack food delivery website built to provide a seamless food ordering experience. The project includes a frontend developed using React and ViteJS, and a backend developed with the MERN stack (MongoDB, Express.js, React, and Node.js). The application also integrates Stripe for payment processing, supports data fetching, API connections, and includes an admin panel for managing orders and users. bcrypt: Library for hashing passwords securely.Axios: HTTP client for making requests to the backend API.Stripe: Payment gateway for processing online payments securely.
 
 ***Table of Contents***
 
