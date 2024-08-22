@@ -21,6 +21,11 @@ This is a full-stack food delivery website built using the MERN stack (MongoDB, 
 - Stripe: Payment gateway for processing online payments securely
 - bcrypt: Library for hashing passwords securely
 
+![Screenshot (91)](https://github.com/user-attachments/assets/8f08e4f3-fad3-44b9-b419-4ffd69dcb4a7)
+![Screenshot (90)](https://github.com/user-attachments/assets/310efa80-1ea1-48fb-a557-428d511d576d)
+![Screenshot (92)](https://github.com/user-attachments/assets/68e03567-1ffe-4806-8f34-b58b9aacd8ec)
+![Screenshot (93)](https://github.com/user-attachments/assets/cd8a8aeb-06bc-42b2-bab7-c08c0db017c0)
+
 ## Installation
 
 1. **Clone the repository:**
