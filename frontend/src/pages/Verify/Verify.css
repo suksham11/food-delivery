@@ -1,0 +1,13 @@
+.verify .spinner{
+    width: 100px;
+    height: 100px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color: #d2ed21;
+}
+
+@keyframes  rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
