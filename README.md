@@ -65,8 +65,8 @@ Admin users can access the admin panel to manage orders, users, and food items.
           <h3>Project Structure</h3>
           <pre>
 food-delivery-website/
-├── backend/
-├── frontend/
+├── backend/ https://foodie-backend-rqzi.onrender.com
+├── frontend/ https://foodie-frontend-ytk4.onrender.com
 ├── .gitignore
 └── README.md
           </pre>
