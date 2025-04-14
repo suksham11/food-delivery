@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
 import "./LoginPopup.css";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../context/StoreContext";
@@ -12,6 +12,18 @@ const LoginPopup = ({ setShowLogin }) => {
     email: "",
     password: "",
   });
+  const [agree, setAgree] = useState(false);
+  const popupRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (popupRef.current && !popupRef.current.contains(e.target)) {
+        setShowLogin(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [setShowLogin]);
 
   const onChangeHandler = (event) => {
     const name = event.target.name;
@@ -39,16 +51,16 @@ const LoginPopup = ({ setShowLogin }) => {
 
   return (
     <div className="login-popup">
-      <form onSubmit={onLogin} className="login-popup-container">
+      <form ref={popupRef} onSubmit={onLogin} className="login-popup-container">
         <div className="login-popup-title">
           <h2>{currState}</h2>
           <img
             onClick={() => setShowLogin(false)}
             src={assets.cross_icon}
-            alt=""
+            alt="close"
           />
         </div>
-        <div className="login-popup-input">
+        <div className="login-popup-inputs">
           {currState === "Login" ? (
             <></>
           ) : (
@@ -82,8 +94,16 @@ const LoginPopup = ({ setShowLogin }) => {
           {currState === "Sign Up" ? "Create account" : "Login"}
         </button>
         <div className="login-popup-condition">
-          <input type="checkbox" required />
-          <p>continue, i agree to the terms of condition and privacy policy</p>
+          <input
+            type="checkbox"
+            checked={agree}
+            onChange={() => setAgree(!agree)}
+            required
+          />
+          <p onClick={() => setAgree(!agree)}>
+            {" "}
+            continue, i agree to the terms of condition and privacy policy
+          </p>
         </div>
         {currState === "Login" ? (
           <p>
